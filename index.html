@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igboya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Easy Platform for Learning<br>Igboya Application Software</h1>
+        <nav>
+            <button id="menu-toggle">☰ Topics</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#matrices">Matrices</a></li>
+                <li><a href="#trigonometry">Trigonometry</a></li>
+                <li><a href="#geometry">Geometry</a></li>
+                <li><a href="#fractions">Fractions</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#algebra">Algebra</a></li>
+                <li><a href="#word problems">Word Problems</a></li>
+                <li><a href="#calculus">Calculus</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="matrices">
+            <h2><strong>Topic 1- MATRICES</strong></h2>
+            
+            <article>
+                <h3><u>Introduction to Matrices</u></h3>
+                <p>A matrix is a rectangular array of numbers, symbols, or expressions arranged in rows and columns and enclosed within brackets. Matrices are fundamental in mathematics and are widely used in various disciplines, including physics, engineering, economics, and computer science.</p>
+                <p>Example of a 2×3 and 3×3 matrix:</p>
+                <pre>
+                | 1  2  3 |
+                | 4  5  6 |
+                </pre>
+                <pre>
+                    | 1  2  3 |
+                    | 4  5  6 |
+                    | 7  8  0 |
+                    </pre>
+                <p>Matrices simplify complex calculations and are essential for solving systems of equations, performing transformations, and representing networks.</p>
+            </article>
+
+            <article>
+                <h3><u>Types of Matrices</u></h3>
+                <ul>
+                    <li><strong>Row Matrix:</strong> A matrix with only one row. Example: [3 5 7]</li>
+                    <li><strong>Column Matrix:</strong> A matrix with only one column. Example: <pre>| 2 |<br>| 4 |<br>| 6 |</pre></li>
+                    <li><strong>Square Matrix:</strong> A matrix where the number of rows equals the number of columns.</li>
+                    <li><strong>Diagonal Matrix:</strong> A square matrix where all non-diagonal elements are zero.</li>
+                    <li><strong>Zero Matrix:</strong> A matrix where all elements are 0.</li>
+                    <li><strong>Symmetric Matrix:</strong> A square matrix where A<sup>T</sup> = A (i.e., transposing the matrix does not change it).</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3><u>Matrix Notation and Representation</u></h3>
+                <p>A matrix is usually represented using a capital letter (e.g., A). The element in the i-th row and j-th column is denoted as A<sub>ij</sub>.</p>
+                <p>Example of a 2×3 & 3×3 matrix:</p>
+                <pre>
+             A = | 1  2  3 |
+                    | 4  5  6 |
+                </pre>
+                <pre>
+            A = | 1  2  3 |
+                   | 4  5  6 |
+                   | 7  8  9 |
+                 </pre>
+            </article>
+
+            <article>
+                <h3><u>Matrix Operations</u></h3>
+                <h4>Addition and Subtraction</h4>
+                <p>Matrices of the same dimensions can be added or subtracted by performing element-wise operations.</p>
+                <p>Example:</p>
+                <pre>
+                A = | 1  2 |    B = | 3  4 |
+                       | 5  6 |          | 7  8 |
+                
+                A + B = | 4  6 |
+
+                            | 12 14 |
+                </pre>
+                <pre>
+                    A = | 3  2 |    B = | 1  4 |
+                            | 5  6 |         | 7  8 |
+                    
+                    A - B = | 2  -2 |
+
+                                | -2 -2 |
+                    </pre>
+
+                <h4>Scalar Multiplication</h4>
+                <p>Multiplying a matrix by a scalar (a single number) involves multiplying each element by that scalar.</p>
+                <p>Example:</p>
+                <pre>
+                3 * | 1  2 | = | 3  6 |
+
+                    | 3  4 |   | 9 12 |
+                </pre>
+
+                <h4>Matrix Multiplication</h4>
+                <p>Matrix multiplication involves multiplying rows of the first matrix with columns of the second matrix.</p>
+                <p>Example:</p>
+                <pre>
+                A = | 1  2 |    B = | 4  5 |
+                       | 3  4 |          | 6  7 |
+                
+                AB = | (1*4 + 2*6)  (1*5 + 2*7) |
+
+                     | (3*4 + 4*6)  (3*5 + 4*7) |
+                
+                AB = | 16  19 |
+
+                         | 36  43 |
+                </pre>
+            </article>
+
+            <article>
+                <h3><u>Determinants and Inverses</u></h3>
+                <h4>Determinant of a 2×2 Matrix</h4>
+                <p>For a 2×2 matrix:</p>
+                <pre>
+                A = | a  b |
+                       | c  d |
+                
+                det(A) = (a * d) - (b * c)
+                </pre>
+                <p>For a 3×3 matrix:</p>
+                <pre>
+                A = | a  b |
+                       | c  d |
+                        | d  e |
+                
+                det(A) = (a * d) - (b * c)
+                </pre>
+                <h4>Inverse of a Matrix</h4>
+                <p>The inverse of a matrix A exists if and only if det(A) ≠ 0 and is given by:</p>
+                <pre>
+                A<sup>-1</sup> = (1/det(A)) * | d  -b |
+                                             | -c  a |
+                </pre>
+            </article>
+
+            <article>
+                <h3><u>Applications of Matrices</u></h3>
+                <ul>
+                    <li><strong>Computer Graphics:</strong> Used in 2D/3D transformations, scaling, and rotation.</li>
+                    <li><strong>Engineering and Physics:</strong> Structural analysis, circuit design, quantum mechanics.</li>
+                    <li><strong>Cryptography:</strong> Used in encryption and security systems.</li>
+                    <li><strong>Economics and Finance:</strong> Financial forecasting and risk assessment.</li>
+                    <li><strong>Statistics and Probability:</strong> Markov chains, data modeling.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="trigonometry">
+            <h2><strong>Topic 2 - TRIGONOMETRY</strong></h2>
+        
+            <article>
+                <h3><u>Introduction to Trigonometry</u></h3>
+                <p>Trigonometry is a branch of mathematics that studies relationships between the angles and sides of triangles. It is widely used in engineering, physics, navigation, and architecture.</p>
+                <p>Basic trigonometric functions include:</p>
+                <ul>
+                    <li><strong>Sine (sin):</strong> sin(θ) = Opposite / Hypotanous</li>
+                    <li><strong>Cosine (cos):</strong> cos(θ) = Adjacent / Hypotanous</li>
+                    <li><strong>Tangent (tan):</strong> tan(θ) = Opposite / Adjacent</li>
+                </ul>
+                <p>These functions help in solving right-angled triangles and analyzing periodic phenomena.</p>
+            </article>
+        
+            <article>
+                <h3><u>Trigonometric Ratios</u></h3>
+                <p>For a right-angled triangle with an angle θ, the primary trigonometric ratios are:</p>
+                <pre>
+                sin(θ) = Opposite / Hypotanous
+                cos(θ) = Adjacent / Hypotanous
+                tan(θ) = Opposite / Adjacent
+                </pre>
+                <p>The reciprocal functions are:</p>
+                <ul>
+                    <li><strong>Cosecant (csc):</strong> csc(θ) = 1/sin(θ)</li>
+                    <li><strong>Secant (sec):</strong> sec(θ) = 1/cos(θ)</li>
+                    <li><strong>Cotangent (cot):</strong> cot(θ) = 1/tan(θ)</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Trigonometric Identities</u></h3>
+                <p>Some important trigonometric identities include:</p>
+                <ul>
+                    <li><strong>Pythagorean Identity:</strong> sin²(θ) + cos²(θ) = 1</li>
+                    <li><strong>Quotient Identities:</strong> tan(θ) = sin(θ) / cos(θ), cot(θ) = cos(θ) / sin(θ)</li>
+                    <li><strong>Reciprocal Identities:</strong> csc(θ) = 1/sin(θ), sec(θ) = 1/cos(θ), cot(θ) = 1/tan(θ)</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Solving Right-Angled Triangles</u></h3>
+                <p>To find missing sides or angles in a right triangle, use the trigonometric ratios:</p>
+                <pre>
+                Example:
+                Given: Hypotanous = 10, Angle θ = 30°
+                Find: Opposite side
+        
+                sin(30°) = Opposite / 10
+                Opposite = 10 * sin(30°) = 10 * 0.5 = 5
+                </pre>
+            </article>
+        
+            <article>
+                <h3><u>Trigonometry in the Unit Circle</u></h3>
+                <p>The unit circle defines trigonometric functions for all angles. The coordinates (x, y) of a point on the unit circle represent:</p>
+                <ul>
+                    <li>x = cos(θ)</li>
+                    <li>y = sin(θ)</li>
+                </ul>
+                <p>Using the unit circle, we extend trigonometry beyond 90°.</p>
+            </article>
+        
+            <article>
+                <h3><u>Applications of Trigonometry</u></h3>
+                <ul>
+                    <li><strong>Physics:</strong> Analyzing wave motions and oscillations.</li>
+                    <li><strong>Engineering:</strong> Structural design, signal processing.</li>
+                    <li><strong>Astronomy:</strong> Measuring distances to stars.</li>
+                    <li><strong>Navigation:</strong> GPS, latitude-longitude calculations.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="geometry">
+            <h2><strong>Topic 3 - GEOMETRY</strong></h2>
+        
+            <article>
+                <h3><u>Introduction to Geometry</u></h3>
+                <p>Geometry is the branch of mathematics that studies the properties and relationships of points, lines, surfaces, and solids. It is widely used in engineering, architecture, computer graphics, and various fields of science.</p>
+                <p>Key concepts in geometry include:</p>
+                <ul>
+                    <li><strong>Points and Lines:</strong> The fundamental building blocks of geometry.</li>
+                    <li><strong>Angles:</strong> Formed when two lines meet at a point.</li>
+                    <li><strong>Shapes and Figures:</strong> Includes triangles, quadrilaterals, circles, and polygons.</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Types of Angles</u></h3>
+                <p>Angles are classified based on their measurements:</p>
+                <ul>
+                    <li><strong>Acute Angle:</strong> Less than 90°</li>
+                    <li><strong>Right Angle:</strong> Exactly 90°</li>
+                    <li><strong>Obtuse Angle:</strong> Greater than 90° but less than 180°</li>
+                    <li><strong>Straight Angle:</strong> Exactly 180°</li>
+                    <li><strong>Reflex Angle:</strong> Greater than 180° but less than 360°</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Types of Triangles</u></h3>
+                <p>Triangles can be classified based on their sides and angles:</p>
+                <ul>
+                    <li><strong>By Sides:</strong></li>
+                    <ul>
+                        <li>Equilateral Triangle: All sides are equal.</li>
+                        <li>Isosceles Triangle: Two sides are equal.</li>
+                        <li>Scalene Triangle: All sides are different.</li>
+                    </ul>
+                    <li><strong>By Angles:</strong></li>
+                    <ul>
+                        <li>Acute Triangle: All angles are less than 90°.</li>
+                        <li>Right Triangle: One angle is exactly 90°.</li>
+                        <li>Obtuse Triangle: One angle is greater than 90°.</li>
+                    </ul>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Pythagoras' Theorem</u></h3>
+                <p>In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides:</p>
+                <pre>
+                a² + b² = c²
+                </pre>
+                <p>Example:</p>
+                <pre>
+                Given: a = 3, b = 4
+                Find: Hypotenuse (c)
+                
+                c² = 3² + 4²
+                c² = 9 + 16
+                c = √25 = 5
+                </pre>
+            </article>
+        
+            <article>
+                <h3><u>Quadrilaterals and Their Properties</u></h3>
+                <p>Quadrilaterals are four-sided polygons with different properties:</p>
+                <ul>
+                    <li><strong>Square:</strong> All sides and angles are equal.</li>
+                    <li><strong>Rectangle:</strong> Opposite sides are equal, all angles are 90°.</li>
+                    <li><strong>Parallelogram:</strong> Opposite sides are parallel and equal.</li>
+                    <li><strong>Rhombus:</strong> All sides are equal, opposite angles are equal.</li>
+                    <li><strong>Trapezium:</strong> One pair of opposite sides is parallel.</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Circles and Their Properties</u></h3>
+                <p>A circle is a set of points equidistant from a central point. Important terms include:</p>
+                <ul>
+                    <li><strong>Radius (r):</strong> Distance from the center to any point on the circle.</li>
+                    <li><strong>Diameter (d):</strong> The longest distance across the circle (d = 2r).</li>
+                    <li><strong>Circumference:</strong> The perimeter of the circle (C = 2πr).</li>
+                    <li><strong>Area:</strong> The space enclosed by the circle (A = πr²).</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Applications of Geometry</u></h3>
+                <ul>
+                    <li><strong>Architecture:</strong> Designing buildings and structures.</li>
+                    <li><strong>Engineering:</strong> Used in civil, mechanical, and electrical engineering.</li>
+                    <li><strong>Graphics Design:</strong> Creating 2D and 3D models.</li>
+                    <li><strong>Navigation:</strong> Used in GPS and map making.</li>
+                </ul>
+            </article>
+        </section>
+        
+
+        <section id="Fractions">
+            <h2><strong>Topic 4 - FRACTIONS</strong></h2>
+        
+            <article>
+                <h3><u>Introduction to Fractions</u></h3>
+                <p>A fraction represents a part of a whole. It consists of two numbers: the numerator (top number) and the denominator (bottom number).</p>
+                <p>For example, in <sup>3</sup>/<sub>4</sub>, the numerator is 3, and the denominator is 4.</p>
+                <p>Fractions are widely used in mathematics, finance, measurements, and everyday calculations.</p>
+            </article>
+        
+            <article>
+                <h3><u>Types of Fractions</u></h3>
+                <ul>
+                    <li><strong>Proper Fractions:</strong> The numerator is smaller than the denominator (e.g., <sup>3</sup>/<sub>5</sub>).</li>
+                    <li><strong>Improper Fractions:</strong> The numerator is greater than or equal to the denominator (e.g., <sup>7</sup>/<sub>4</sub>).</li>
+                    <li><strong>Mixed Fractions:</strong> A combination of a whole number and a fraction (e.g., 2<sup>1</sup>/<sub>3</sub>).</li>
+                    <li><strong>Equivalent Fractions:</strong> Different fractions that represent the same value (e.g., <sup>2</sup>/<sub>4</sub> = <sup>1</sup>/<sub>2</sub>).</li>
+                    <li><strong>Unit Fractions:</strong> A fraction with 1 as the numerator (e.g., <sup>1</sup>/<sub>6</sub>).</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Converting Fractions</u></h3>
+                <ul>
+                    <li><strong>Improper to Mixed:</strong> Divide the numerator by the denominator to get a whole number and remainder.</li>
+                    <li><strong>Mixed to Improper:</strong> Multiply the whole number by the denominator, then add the numerator.</li>
+                    <li><strong>Fractions to Decimals:</strong> Divide the numerator by the denominator (e.g., <sup>3</sup>/<sub>4</sub> = 0.75).</li>
+                    <li><strong>Fractions to Percentages:</strong> Multiply the fraction by 100 (e.g., <sup>1</sup>/<sub>2</sub> × 100 = 50%).</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3><u>Operations on Fractions</u></h3>
+                <ul>
+                    <li><strong>Addition:</strong> Find a common denominator, then add the numerators.</li>
+                    <li><strong>Subtraction:</strong> Find a common denominator, then subtract the numerators.</li>
+                    <li><strong>Multiplication:</strong> Multiply the numerators and multiply the denominators.</li>
+                    <li><strong>Division:</strong> Multiply by the reciprocal (flip the second fraction and multiply).</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                <sup>2</sup>/<sub>3</sub> × <sup>3</sup>/<sub>4</sub> = <sup>6</sup>/<sub>12</sub> = <sup>1</sup>/<sub>2</sub>
+                </pre>
+            </article>
+        
+            <article>
+                <h3><u>Comparing Fractions</u></h3>
+                <p>To compare fractions:</p>
+                <ul>
+                    <li>Convert them to the same denominator.</li>
+                    <li>Convert them to decimals.</li>
+                    <li>Use cross-multiplication.</li>
+                </ul>
+                <p>Example:</p>
+                <pre>
+                Compare <sup>3</sup>/<sub>5</sub> and <sup>2</sup>/<sub>3</sub>.
+                Cross multiply: 3 × 3 = 9, 5 × 2 = 10.
+                Since 10 > 9, <sup>2</sup>/<sub>3</sub> is greater.
+                </pre>
+            </article>
+        
+            <article>
+                <h3><u>Applications of Fractions</u></h3>
+                <ul>
+                    <li><strong>Cooking:</strong> Measuring ingredients in recipes.</li>
+                    <li><strong>Finance:</strong> Calculating discounts, interest, and ratios.</li>
+                    <li><strong>Measurements:</strong> Using inches, feet, and centimeters.</li>
+                    <li><strong>Science:</strong> Expressing chemical ratios and proportions.</li>
+                </ul>
+            </article>
+        </section>
+        
+     <section id="statistics">
+
+    <h2><strong>Topic 5 - STATISTICS</strong></h2>
+
+    <article>
+        <h3><u>Introduction to Statistics</u></h3>
+        <p>Statistics is the study of collecting, analyzing, interpreting, presenting, and organizing data. It is widely used in various fields such as economics, medicine, engineering, and social sciences.</p>
+        <p>Key concepts in statistics include:</p>
+        <ul>
+            <li><strong>Data:</strong> The raw information collected for analysis.</li>
+            <li><strong>Population and Sample:</strong> Population refers to the entire group, while a sample is a subset used for study.</li>
+            <li><strong>Descriptive and Inferential Statistics:</strong> Descriptive statistics summarize data, while inferential statistics make predictions.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Types of Data</u></h3>
+        <p>Data can be classified into two main types:</p>
+        <ul>
+            <li><strong>Qualitative (Categorical) Data:</strong> Non-numeric data, such as colors, names, or labels.</li>
+            <li><strong>Quantitative (Numerical) Data:</strong> Numeric data, further divided into:</li>
+            <ul>
+                <li><strong>Discrete Data:</strong> Whole numbers (e.g., number of students in a class).</li>
+                <li><strong>Continuous Data:</strong> Measurable values (e.g., height, weight).</li>
+            </ul>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Measures of Central Tendency</u></h3>
+        <p>Measures of central tendency help describe the center of a data set:</p>
+        <ul>
+            <li><strong>Mean:</strong> The average value.</li>
+            <li><strong>Median:</strong> The middle value when data is ordered.</li>
+            <li><strong>Mode:</strong> The most frequently occurring value.</li>
+        </ul>
+        <p><strong>Example:</strong> Find the mean, median, and mode of the dataset: [4, 7, 2, 9, 7, 5, 7].</p>
+        <pre>
+        Mean = (4 + 7 + 2 + 9 + 7 + 5 + 7) / 7 = 41 / 7 ≈ 5.86
+        Median = 7 (middle value when arranged: 2, 4, 5, 7, 7, 7, 9)
+        Mode = 7 (appears most frequently)
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Measures of Dispersion</u></h3>
+        <p>These measures indicate how data values spread out:</p>
+        <ul>
+            <li><strong>Range:</strong> Difference between maximum and minimum values.</li>
+            <li><strong>Variance:</strong> Measures how data values differ from the mean.</li>
+            <li><strong>Standard Deviation:</strong> Square root of variance, showing data spread.</li>
+        </ul>
+        <p><strong>Example:</strong> Find the range, variance, and standard deviation of the dataset [5, 10, 15, 20, 25].</p>
+        <pre>
+        Range = 25 - 5 = 20
+        Mean = (5+10+15+20+25) / 5 = 15
+        Variance = [(5-15)^2 + (10-15)^2 + (15-15)^2 + (20-15)^2 + (25-15)^2] / 5
+                 = [100 + 25 + 0 + 25 + 100] / 5 = 50
+        Standard Deviation = √50 ≈ 7.07
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Probability in Statistics</u></h3>
+        <p>Probability measures the likelihood of an event occurring. The probability of an event happening is calculated as:</p>
+        <pre>
+        P(Event) = Favorable Outcomes / Total Outcomes
+        </pre>
+        <p><strong>Example:</strong> If a die is rolled, what is the probability of rolling a 4?</p>
+        <pre>
+        P(rolling 4) = 1/6 ≈ 0.1667 or 16.67%
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Correlation and Regression</u></h3>
+        <p><strong>Correlation:</strong> Measures the relationship between two variables.</p>
+        <p><strong>Regression:</strong> Predicts one variable based on another.</p>
+        <p><strong>Example:</strong> If studying time and exam scores are correlated, a regression equation can predict future scores.</p>
+    </article>
+
+    <article>
+        <h3><u>Applications of Statistics</u></h3>
+        <ul>
+            <li><strong>Business:</strong> Market analysis and decision-making.</li>
+            <li><strong>Health:</strong> Medical research and clinical trials.</li>
+            <li><strong>Sports:</strong> Player performance analysis.</li>
+            <li><strong>Science:</strong> Experimental data interpretation.</li>
+        </ul>
+    </article>
+</section>
+
+
+        <section id="algebra">
+
+    <h2><strong>Topic 6 - ALGEBRA</strong></h2>
+
+    <article>
+        <h3><u>Introduction to Algebra</u></h3>
+        <p>Algebra is a branch of mathematics that deals with symbols and the rules for manipulating those symbols. It is used to represent real-world problems in a mathematical form.</p>
+        <p>Key concepts in algebra include:</p>
+        <ul>
+            <li><strong>Variables:</strong> Symbols (e.g., x, y) used to represent numbers.</li>
+            <li><strong>Expressions:</strong> Mathematical statements involving variables, numbers, and operations.</li>
+            <li><strong>Equations:</strong> Statements that show equality between two expressions.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Basic Algebraic Operations</u></h3>
+        <p>Common algebraic operations include:</p>
+        <ul>
+            <li><strong>Addition and Subtraction:</strong> Combining like terms.</li>
+            <li><strong>Multiplication:</strong> Distributive property (e.g., a(b + c) = ab + ac).</li>
+            <li><strong>Division:</strong> Splitting an expression into parts.</li>
+            <li><strong>Exponentiation:</strong> Raising a number to a power.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Solving Linear Equations</u></h3>
+        <p>A linear equation is an equation of the form ax + b = c. To solve for x:</p>
+        <pre>
+        Example: 2x + 3 = 7
+        Step 1: Subtract 3 from both sides → 2x = 4
+        Step 2: Divide by 2 → x = 2
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Quadratic Equations</u></h3>
+        <p>A quadratic equation is of the form ax² + bx + c = 0. Methods to solve:</p>
+        <ul>
+            <li><strong>Factoring:</strong> Expressing the equation as a product of two binomials.</li>
+            <li><strong>Quadratic Formula:</strong> x = (-b ± √(b² - 4ac)) / 2a.</li>
+            <li><strong>Completing the Square:</strong> Rewriting the equation to find x.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Inequalities</u></h3>
+        <p>Expressions that compare two values using inequality symbols (&lt;, ≤, &gt;, ≥):</p>
+        <pre>
+        Example: 3x - 5 &gt; 7
+        Step 1: Add 5 to both sides → 3x &gt; 12
+        Step 2: Divide by 3 → x &gt; 4
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Functions and Graphs</u></h3>
+        <p>A function represents a relationship between inputs and outputs. The most common types include:</p>
+        <ul>
+            <li><strong>Linear Functions:</strong> y = mx + b (graph is a straight line).</li>
+            <li><strong>Quadratic Functions:</strong> y = ax² + bx + c (graph is a parabola).</li>
+            <li><strong>Exponential Functions:</strong> y = a * b^x (growth or decay behavior).</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Polynomials</u></h3>
+        <p>Polynomials are algebraic expressions with multiple terms, classified based on their degree:</p>
+        <ul>
+            <li><strong>Monomial:</strong> Single term (e.g., 5x).</li>
+            <li><strong>Binomial:</strong> Two terms (e.g., x² - 4).</li>
+            <li><strong>Trinomial:</strong> Three terms (e.g., x² + 2x + 1).</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Applications of Algebra</u></h3>
+        <ul>
+            <li><strong>Finance:</strong> Calculating interest, budgeting, and investments.</li>
+            <li><strong>Engineering:</strong> Designing systems and solving structural problems.</li>
+            <li><strong>Physics:</strong> Representing motion and forces mathematically.</li>
+            <li><strong>Computer Science:</strong> Algorithms and programming logic.</li>
+        </ul>
+    </article>
+
+</section>
+
+
+        <section id="word problems">
+<h2><strong>Topic 7 - WORD PROBLEMS</strong></h2>
+
+    <article>
+        <h3><u>Introduction to Word Problems</u></h3>
+        <p>Word problems are mathematical problems written in a real-world context. They require critical thinking and problem-solving skills to interpret and solve them using mathematical operations.</p>
+        <p>Common types of word problems include:</p>
+        <ul>
+            <li><strong>Arithmetic Problems:</strong> Involving addition, subtraction, multiplication, or division.</li>
+            <li><strong>Algebraic Problems:</strong> Requiring the formation and solving of equations.</li>
+            <li><strong>Geometry Problems:</strong> Involving shapes, measurements, and spatial reasoning.</li>
+            <li><strong>Ratio and Proportion Problems:</strong> Dealing with comparisons of quantities.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Steps to Solve Word Problems</u></h3>
+        <p>To solve word problems effectively, follow these steps:</p>
+        <ul>
+            <li><strong>Step 1:</strong> Read the problem carefully and identify key information.</li>
+            <li><strong>Step 2:</strong> Determine what is being asked.</li>
+            <li><strong>Step 3:</strong> Choose the correct mathematical operations.</li>
+            <li><strong>Step 4:</strong> Form an equation or set up a logical approach.</li>
+            <li><strong>Step 5:</strong> Solve the equation and check your answer for accuracy.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Examples of Word Problems</u></h3>
+        <p><strong>Example 1: Age Problem</strong></p>
+        <p>John is 5 years older than Sam. If Sam is 12 years old, how old is John?</p>
+        <pre>
+        John's age = Sam's age + 5
+        John's age = 12 + 5 = 17
+        </pre>
+
+        <p><strong>Example 2: Distance, Speed, and Time</strong></p>
+        <p>A car travels at a speed of 60 km/h for 3 hours. How far does it travel?</p>
+        <pre>
+        Distance = Speed × Time
+        Distance = 60 × 3 = 180 km
+        </pre>
+
+        <p><strong>Example 3: Money and Profit</strong></p>
+        <p>A shopkeeper buys a bag for $50 and sells it for $75. What is the profit?</p>
+        <pre>
+        Profit = Selling Price - Cost Price
+        Profit = 75 - 50 = $25
+        </pre>
+    </article>
+
+    <article>
+        <h3><u>Common Mistakes in Word Problems</u></h3>
+        <ul>
+            <li>Not reading the question carefully.</li>
+            <li>Misinterpreting the given information.</li>
+            <li>Using the wrong mathematical operation.</li>
+            <li>Forgetting to check the final answer.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Applications of Word Problems</u></h3>
+        <ul>
+            <li><strong>Finance:</strong> Calculating interest, savings, and expenses.</li>
+            <li><strong>Engineering:</strong> Solving real-life mathematical problems in design and construction.</li>
+            <li><strong>Business:</strong> Computing profits, losses, and investments.</li>
+            <li><strong>Science:</strong> Measuring quantities and analyzing data.</li>
+        </ul>
+    </article>
+
+</section>
+
+
+        <section id="calculus">
+    <h2><strong>Topic 8 - CALCULUS</strong></h2>
+
+    <article>
+        <h3><u>Introduction to Calculus</u></h3>
+        <p>Calculus is a branch of mathematics focused on rates of change and accumulation of quantities. It is divided into two main branches:</p>
+        <ul>
+            <li><strong>Differential Calculus:</strong> Concerned with the concept of derivatives, which measure how a function changes.</li>
+            <li><strong>Integral Calculus:</strong> Deals with the concept of integrals, used to find areas, volumes, and accumulations.</li>
+        </ul>
+        <p>Calculus is widely used in physics, engineering, economics, and computer science.</p>
+    </article>
+
+    <article>
+        <h3><u>Limits and Continuity</u></h3>
+        <p>Limits help us understand how functions behave as inputs approach a certain value. The limit of a function is written as:</p>
+        <pre>
+        lim x→a f(x) = L
+        </pre>
+        <p>A function is continuous at a point if:</p>
+        <ul>
+            <li>The function is defined at that point.</li>
+            <li>The limit exists at that point.</li>
+            <li>The function’s value equals the limit.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Differentiation (Derivatives)</u></h3>
+        <p>The derivative of a function measures how fast it changes. It is defined as:</p>
+        <pre>
+        f'(x) = lim h→0 [f(x+h) - f(x)] / h
+        </pre>
+        <p>Common differentiation rules:</p>
+        <ul>
+            <li><strong>Power Rule:</strong> d/dx [x^n] = n*x^(n-1)</li>
+            <li><strong>Sum Rule:</strong> d/dx [f(x) + g(x)] = f'(x) + g'(x)</li>
+            <li><strong>Product Rule:</strong> d/dx [f(x)g(x)] = f'(x)g(x) + f(x)g'(x)</li>
+            <li><strong>Quotient Rule:</strong> d/dx [f(x)/g(x)] = (f'(x)g(x) - f(x)g'(x)) / g(x)^2</li>
+            <li><strong>Chain Rule:</strong> d/dx [f(g(x))] = f'(g(x)) * g'(x)</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Applications of Derivatives</u></h3>
+        <p>Derivatives have many real-world applications:</p>
+        <ul>
+            <li><strong>Finding Slopes:</strong> Used to determine the slope of a curve at any point.</li>
+            <li><strong>Maxima and Minima:</strong> Helps in identifying the highest and lowest points on a function.</li>
+            <li><strong>Velocity and Acceleration:</strong> Derivatives are used in physics to analyze motion.</li>
+            <li><strong>Optimization Problems:</strong> Used in economics and engineering to maximize efficiency.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Integration (Antiderivatives)</u></h3>
+        <p>Integration is the reverse process of differentiation. It helps find the area under a curve. The integral of a function is written as:</p>
+        <pre>
+        ∫ f(x) dx = F(x) + C
+        </pre>
+        <p>Common integration rules:</p>
+        <ul>
+            <li><strong>Power Rule:</strong> ∫ x^n dx = (x^(n+1))/(n+1) + C (n ≠ -1)</li>
+            <li><strong>Sum Rule:</strong> ∫ [f(x) + g(x)] dx = ∫ f(x) dx + ∫ g(x) dx</li>
+            <li><strong>Substitution Rule:</strong> Used when dealing with composite functions.</li>
+            <li><strong>Integration by Parts:</strong> ∫ u dv = uv - ∫ v du</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Applications of Integrals</u></h3>
+        <p>Integrals are used in many fields, including:</p>
+        <ul>
+            <li><strong>Finding Areas:</strong> Used to calculate the area under curves.</li>
+            <li><strong>Volume Calculation:</strong> Used in engineering and physics to determine the volume of solids.</li>
+            <li><strong>Work and Energy:</strong> Helps in computing work done by a force in physics.</li>
+            <li><strong>Probability and Statistics:</strong> Integral calculus is used in probability distributions.</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Fundamental Theorem of Calculus</u></h3>
+        <p>This theorem connects differentiation and integration:</p>
+        <ul>
+            <li><strong>First Part:</strong> If F(x) is an antiderivative of f(x), then:</li>
+            <pre>
+            ∫[a, b] f(x) dx = F(b) - F(a)
+            </pre>
+            <li><strong>Second Part:</strong> The derivative of an integral gives back the function:</li>
+            <pre>
+            d/dx ∫[a, x] f(t) dt = f(x)
+            </pre>
+        </ul>
+    </article>
+
+    <article>
+        <h3><u>Applications of Calculus</u></h3>
+        <ul>
+            <li><strong>Physics:</strong> Used in motion analysis, electromagnetism, and fluid dynamics.</li>
+            <li><strong>Engineering:</strong> Helps in designing mechanical and electrical systems.</li>
+            <li><strong>Medicine:</strong> Used in modeling biological processes and drug interactions.</li>
+            <li><strong>Economics:</strong> Helps in cost analysis, profit maximization, and demand modeling.</li>
+            <li><strong>Computer Science:</strong> Used in algorithms, machine learning, and graphics.</li>
+        </ul>
+    </article>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+<!-- Marquee Text -->
+<div class="marquee-container">
+    <div class="marquee-text">
+        <b>Unlock your mathematical potential with our interactive challenges and master the art of numbers. For inquiries, reach out to us at 📞 +2348030794400.</b>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <footer>
+        <h3>Connect with Us</h3>
+        <p>We’re here to assist you! For any inquiries, feedback, or support, feel free to reach out.</p>
+        <p>Email: <a href="mailto:olarewajuadijat@gmail.com">olarewajuadijat@gmail.com</a></p>
+        <p>📞 Phone: +2348030794400</p>
+        <p>Stay connected and keep learning!</p>
+        <p>&copy; Designed by Ameen Mujahid Tech. All rights reserved.</p>
+    </footer>
+    
+
+
+<script>
+function redirectToWhatsApp(button) {
+    // Find the closest select element to the button
+    const selectElement = button.previousElementSibling;
+    // Get the selected value (WhatsApp link)
+    const selectedLink = selectElement.value;
+    // Redirect to the selected WhatsApp link
+    window.location.href = selectedLink;
+}
+</script>
+</body>
+</html>
