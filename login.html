@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Start Learning</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="learningVideo">
+            <!-- Replace the source link with the path to your video -->
+            <source src="large.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>IGBOYA</span>
+            </div>
+            <h1>Login to Start Learning</h1>
+            <p><strong>Enter your credentials to access your learning dashboard</strong></p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="sessionId">Session ID</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="sessionId" placeholder="Enter your session ID" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-with-icon">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+
+            <div class="form-options">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#" id="forgotPassword">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">
+                <span>Sign In</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <div class="signup-link">
+                Don't have an account? <a href="#" id="signupLink">Sign up</a>
+            </div>
+        </form>
+
+        <div class="notification" id="notification"></div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

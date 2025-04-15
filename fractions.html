@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions - IGBOYA</title>
+    <link rel="stylesheet" href="fractionsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="app-container">
+        <!-- Side Navigation -->
+        <nav class="side-nav">
+            <div class="side-nav-content">
+                <a href="topics.html" class="btn-red"><i class="fas fa-arrow-left"></i> Back to Topics</a>
+            </div>
+        </nav>
+        <div class="main-content">
+            <!-- Introduction Section -->
+            <section id="fraction-header" class="fraction-header">
+                <h2>You're about to master fractions!</h2>
+                <p>Let's get started with understanding fractions and how they work.</p>
+            </section>
+        
+            <!-- Fraction Introduction -->
+            <section id="introduction">
+                <h1><i class="fas fa-divide"></i>Fractions</h1>
+                <p>A fraction represents a part of a whole. It consists of two numbers: the numerator (top number) and the denominator (bottom number).</p>
+                
+                <div class="fraction-example">
+                    <p>For example, in <strong>3/4</strong>:</p>
+                    <ul>
+                        <li>The numerator is <strong>3</strong></li>
+                        <li>The denominator is <strong>4</strong></li>
+                    </ul>
+                    <p>This means we have 3 parts out of 4 equal parts.</p>
+                </div>
+        
+                <div class="importance">
+                    <h3><i class="fas fa-lightbulb"></i> Importance of Fractions</h3>
+                    <p>Fractions are widely used in:</p>
+                    <ul>
+                        <li>Mathematics (algebra, calculus)</li>
+                        <li>Finance (interest rates, ratios)</li>
+                        <li>Measurements (inches, cups)</li>
+                        <li>Everyday calculations (recipes, discounts)</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="fraction-types-header" class="fraction-types-header">
+                <h2>You're doing fantastic! Now let's explore different types of fractions!</h2>
+                <p>Understanding these types will help you master fractions and how to work with them. You're one step closer to becoming a fraction expert!</p>
+            </section>
+            
+            <section id="types">
+                <h2><i class="fas fa-layer-group"></i> Types of Fractions</h2>
+                
+                <div class="fraction-types">
+                    <!-- Proper Fraction -->
+                    <div class="type-card">
+                        <h3>Proper Fractions</h3>
+                        <p>Numerator is smaller than denominator.</p>
+                        <p>Example: <strong>3/5</strong></p>
+                        <p>Value is less than 1.</p>
+                    </div>
+                    
+                    <!-- Improper Fraction -->
+                    <div class="type-card">
+                        <h3>Improper Fractions</h3>
+                        <p>Numerator is greater than or equal to denominator.</p>
+                        <p>Example: <strong>7/4</strong></p>
+                        <p>Value is 1 or greater.</p>
+                    </div>
+                    
+                    <!-- Mixed Fraction -->
+                    <div class="type-card">
+                        <h3>Mixed Fractions</h3>
+                        <p>Combination of whole number and fraction.</p>
+                        <p>Example: <strong>2⅓</strong></p>
+                        <p>Represents whole quantities plus parts.</p>
+                    </div>
+                    
+                    <!-- Equivalent Fraction -->
+                    <div class="type-card">
+                        <h3>Equivalent Fractions</h3>
+                        <p>Different fractions representing the same value.</p>
+                        <p>Example: <strong>2/4 = 1/2</strong></p>
+                        <p>Created by multiplying/dividing numerator and denominator by the same number.</p>
+                    </div>
+                    
+                    <!-- Unit Fraction -->
+                    <div class="type-card">
+                        <h3>Unit Fractions</h3>
+                        <p>Numerator is always 1.</p>
+                        <p>Example: <strong>1/6</strong></p>
+                        <p>Building blocks for all fractions.</p>
+                    </div>
+            
+                    <!-- Complex Fractions -->
+                    <div class="type-card">
+                        <h3>Complex Fractions</h3>
+                        <p>A fraction where the numerator, denominator, or both contain fractions.</p>
+                        <p>Example: <strong>(1/2) / (3/4)</strong></p>
+                        <p>Can be simplified by multiplying the numerator by the reciprocal of the denominator.</p>
+                    </div>
+            
+                    <!-- Decimal Fractions -->
+                    <div class="type-card">
+                        <h3>Decimal Fractions</h3>
+                        <p>Fractions where the denominator is a power of 10.</p>
+                        <p>Example: <strong>0.75</strong> is the decimal form of <strong>3/4</strong></p>
+                        <p>These fractions are written as decimals rather than traditional fraction notation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fraction-conversion-header" class="fraction-conversion-header">
+                <h2>You're doing amazing! Let's dive into how to convert fractions!</h2>
+                <p>Mastering conversions will give you more flexibility in working with fractions in different forms. Keep up the great work!</p>
+            </section>
+            
+            <section id="fraction-conversions">
+                <h2><i class="fas fa-exchange-alt"></i> Converting Fractions</h2>
+                
+                <div class="conversion-methods">
+                    <!-- Improper to Mixed Conversion -->
+                    <div class="method-card" id="improper-to-mixed">
+                        <h3>Improper to Mixed</h3>
+                        <ol>
+                            <li>Divide numerator by denominator</li>
+                            <li>Quotient becomes the whole number</li>
+                            <li>Remainder becomes the new numerator</li>
+                            <li>Denominator stays the same</li>
+                        </ol>
+                        <p>Example: <strong>7/4 = 1¾</strong></p>
+                    </div>
+                    
+                    <!-- Mixed to Improper Conversion -->
+                    <div class="method-card" id="mixed-to-improper">
+                        <h3>Mixed to Improper</h3>
+                        <ol>
+                            <li>Multiply the whole number by the denominator</li>
+                            <li>Add the numerator to the result</li>
+                            <li>Keep the same denominator</li>
+                        </ol>
+                        <p>Example: <strong>2⅓ = 7/3</strong></p>
+                    </div>
+                    
+                    <!-- Fractions to Decimals Conversion -->
+                    <div class="method-card" id="fractions-to-decimals">
+                        <h3>Fractions to Decimals</h3>
+                        <p>Divide the numerator by the denominator</p>
+                        <p>Example: <strong>3/4 = 0.75</strong></p>
+                        <p>Alternative: Find an equivalent fraction with a denominator of 10, 100, etc.</p>
+                    </div>
+                    
+                    <!-- Fractions to Percentages Conversion -->
+                    <div class="method-card" id="fractions-to-percentages">
+                        <h3>Fractions to Percentages</h3>
+                        <p>Multiply the fraction by 100</p>
+                        <p>Example: <strong>1/2 × 100 = 50%</strong></p>
+                        <p>Convert to decimal first if needed</p>
+                    </div>
+            
+                    <!-- Decimal to Fraction Conversion -->
+                    <div class="method-card" id="decimal-to-fraction">
+                        <h3>Decimal to Fraction</h3>
+                        <ol>
+                            <li>Write the decimal as a fraction with 1 in the denominator</li>
+                            <li>Multiply both the numerator and denominator by 10, 100, etc., to eliminate the decimal</li>
+                            <li>Simplify the fraction if needed</li>
+                        </ol>
+                        <p>Example: <strong>0.75 = 3/4</strong></p>
+                    </div>
+            
+                    <!-- Fraction to Ratio Conversion -->
+                    <div class="method-card" id="fraction-to-ratio">
+                        <h3>Fraction to Ratio</h3>
+                        <p>Write the fraction as a ratio of the numerator to the denominator</p>
+                        <p>Example: <strong>3/4 = 3:4</strong></p>
+                    </div>
+                </div>
+            </section>
+            <section id="fraction-operations-header" class="fraction-operations-header">
+                <h2>You're doing great! Now, let's explore operations with fractions!</h2>
+                <p>Mastering operations with fractions will help you tackle more complex fraction problems with ease. Keep pushing forward!</p>
+            </section>
+            
+            <section id="fraction-operations">
+                <h2><i class="fas fa-calculator"></i> Operations with Fractions</h2>
+                
+                <div class="operation-methods">
+                    <!-- Addition -->
+                    <div class="operation-card" id="fraction-addition">
+                        <h3>Addition</h3>
+                        <ol>
+                            <li>Find the least common denominator (LCD)</li>
+                            <li>Convert fractions to equivalent forms with the LCD</li>
+                            <li>Add the numerators</li>
+                            <li>Keep the denominator the same</li>
+                            <li>Simplify the result if possible</li>
+                        </ol>
+                        <p>Example: <strong>1/4 + 1/2 = 1/4 + 2/4 = 3/4</strong></p>
+                    </div>
+                    
+                    <!-- Subtraction -->
+                    <div class="operation-card" id="fraction-subtraction">
+                        <h3>Subtraction</h3>
+                        <ol>
+                            <li>Find the least common denominator (LCD)</li>
+                            <li>Convert fractions to equivalent forms with the LCD</li>
+                            <li>Subtract the numerators</li>
+                            <li>Keep the denominator the same</li>
+                            <li>Simplify the result if possible</li>
+                        </ol>
+                        <p>Example: <strong>3/4 - 1/2 = 3/4 - 2/4 = 1/4</strong></p>
+                    </div>
+                    
+                    <!-- Multiplication -->
+                    <div class="operation-card" id="fraction-multiplication">
+                        <h3>Multiplication</h3>
+                        <ol>
+                            <li>Multiply the numerators together</li>
+                            <li>Multiply the denominators together</li>
+                            <li>Simplify the resulting fraction</li>
+                        </ol>
+                        <p>Example: <strong>2/3 × 3/4 = 6/12 = 1/2</strong></p>
+                    </div>
+                    
+                    <!-- Division -->
+                    <div class="operation-card" id="fraction-division">
+                        <h3>Division</h3>
+                        <ol>
+                            <li>Flip the second fraction (find the reciprocal)</li>
+                            <li>Multiply the first fraction by the reciprocal</li>
+                            <li>Simplify the resulting fraction</li>
+                        </ol>
+                        <p>Example: <strong>2/3 ÷ 3/4 = 2/3 × 4/3 = 8/9</strong></p>
+                    </div>
+            
+                    <!-- Adding Fractions with Unlike Denominators -->
+                    <div class="operation-card" id="fraction-add-unlike-denominators">
+                        <h3>Adding Fractions with Unlike Denominators</h3>
+                        <ol>
+                            <li>Find the least common denominator (LCD)</li>
+                            <li>Convert both fractions to equivalent fractions with the LCD</li>
+                            <li>Add the numerators</li>
+                            <li>Keep the denominator the same</li>
+                            <li>Simplify the result if possible</li>
+                        </ol>
+                        <p>Example: <strong>1/3 + 1/4 = 4/12 + 3/12 = 7/12</strong></p>
+                    </div>
+            
+                    <!-- Subtracting Fractions with Unlike Denominators -->
+                    <div class="operation-card" id="fraction-subtract-unlike-denominators">
+                        <h3>Subtracting Fractions with Unlike Denominators</h3>
+                        <ol>
+                            <li>Find the least common denominator (LCD)</li>
+                            <li>Convert both fractions to equivalent fractions with the LCD</li>
+                            <li>Subtract the numerators</li>
+                            <li>Keep the denominator the same</li>
+                            <li>Simplify the result if possible</li>
+                        </ol>
+                        <p>Example: <strong>5/6 - 1/2 = 5/6 - 3/6 = 2/6 = 1/3</strong></p>
+                    </div>
+                    
+                    <!-- Complex Fraction Operations -->
+                    <div class="operation-card" id="fraction-complex-operations">
+                        <h3>Operations with Complex Fractions</h3>
+                        <ol>
+                            <li>First, simplify the complex fraction by multiplying the numerator by the reciprocal of the denominator</li>
+                            <li>If needed, perform additional operations (addition, subtraction, etc.) after simplification</li>
+                        </ol>
+                        <p>Example: <strong>(1/2) ÷ (3/4) = (1/2) × (4/3) = 4/6 = 2/3</strong></p>
+                    </div>
+                </div>
+            </section>            
+
+            <section id="fraction-comparison-header" class="fraction-comparison-header">
+                <h2>Great job so far! Now, let's dive into comparing fractions!</h2>
+                <p>Learning to compare fractions will help you make better decisions when working with fractions in real-world scenarios. Keep up the great work!</p>
+            </section>
+            
+            <section id="fraction-comparison">
+                <h2><i class="fas fa-balance-scale"></i> Comparing Fractions</h2>
+                
+                <div class="comparison-methods">
+                    <!-- Common Denominator Method -->
+                    <div class="method-card" id="common-denominator-method">
+                        <h3>Common Denominator Method</h3>
+                        <ol>
+                            <li>Find the least common denominator (LCD)</li>
+                            <li>Convert both fractions to equivalent forms with the LCD</li>
+                            <li>Compare the numerators</li>
+                        </ol>
+                        <p>Example: <strong>3/5 vs 2/3 → 9/15 vs 10/15 → 2/3 is larger</strong></p>
+                    </div>
+                    
+                    <!-- Decimal Conversion -->
+                    <div class="method-card" id="decimal-conversion">
+                        <h3>Decimal Conversion</h3>
+                        <ol>
+                            <li>Convert both fractions to decimal form</li>
+                            <li>Compare the decimal values</li>
+                        </ol>
+                        <p>Example: <strong>3/5 = 0.6 vs 2/3 ≈ 0.666 → 2/3 is larger</strong></p>
+                    </div>
+                    
+                    <!-- Cross-Multiplication -->
+                    <div class="method-card" id="cross-multiplication">
+                        <h3>Cross-Multiplication</h3>
+                        <ol>
+                            <li>Multiply the numerator of the first fraction by the denominator of the second fraction</li>
+                            <li>Multiply the denominator of the first fraction by the numerator of the second fraction</li>
+                            <li>Compare the results</li>
+                        </ol>
+                        <p>Example: <strong>3/5 vs 2/3 → (3×3=9) vs (5×2=10) → 2/3 is larger</strong></p>
+                    </div>
+                    
+                    <!-- Comparing Mixed Fractions -->
+                    <div class="method-card" id="compare-mixed-fractions">
+                        <h3>Comparing Mixed Fractions</h3>
+                        <ol>
+                            <li>Convert mixed fractions to improper fractions</li>
+                            <li>Use any of the above methods (LCD, Decimal Conversion, Cross-Multiplication)</li>
+                        </ol>
+                        <p>Example: <strong>2⅓ vs 2½ → Convert to improper fractions: 7/3 vs 5/2 → Compare: 7/3 vs 5/2 → 7/3 is larger</strong></p>
+                    </div>
+            
+                    <!-- Comparing Fractions with Negative Values -->
+                    <div class="method-card" id="negative-fractions-comparison">
+                        <h3>Comparing Fractions with Negative Values</h3>
+                        <ol>
+                            <li>Consider the sign of each fraction</li>
+                            <li>Follow any of the above methods to compare the absolute values</li>
+                            <li>Negative fractions will be smaller than positive fractions</li>
+                        </ol>
+                        <p>Example: <strong>-3/4 vs 2/3 → -3/4 is smaller than 2/3</strong></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="fraction-applications-header" class="fraction-applications-header">
+                <h2>Awesome progress! Now, let's see how fractions are used in the real world!</h2>
+                <p>Understanding the practical applications of fractions will help you connect math to everyday tasks. You're doing fantastic!</p>
+            </section>
+            
+            <section id="fraction-applications">
+                <h2><i class="fas fa-rocket"></i> Real-World Applications</h2>
+                
+                <div class="application-grid">
+                    <!-- Cooking -->
+                    <div class="app-card" id="fraction-cooking">
+                        <h3><i class="fas fa-utensils"></i> Cooking</h3>
+                        <ul>
+                            <li>Measuring ingredients in recipes</li>
+                            <li>Adjusting recipe quantities</li>
+                            <li>Dividing portions equally</li>
+                        </ul>
+                        <p>Example: Doubling a recipe that calls for ¾ cup of flour (2 × ¾ = 1½ cups)</p>
+                    </div>
+                    
+                    <!-- Finance -->
+                    <div class="app-card" id="fraction-finance">
+                        <h3><i class="fas fa-money-bill-wave"></i> Finance</h3>
+                        <ul>
+                            <li>Calculating discounts and sales</li>
+                            <li>Determining interest rates</li>
+                            <li>Analyzing financial ratios</li>
+                        </ul>
+                        <p>Example: Calculating 25% off a $120 item (25/100 × 120 = $30 off, new price = $90)</p>
+                    </div>
+                    
+                    <!-- Measurements -->
+                    <div class="app-card" id="fraction-measurements">
+                        <h3><i class="fas fa-ruler"></i> Measurements</h3>
+                        <ul>
+                            <li>Using inches and feet (imperial system)</li>
+                            <li>Measuring cups and spoons</li>
+                            <li>Construction and carpentry</li>
+                        </ul>
+                        <p>Example: Cutting a board to 5⅜ inches (5 + ⅜ inches)</p>
+                    </div>
+                    
+                    <!-- Science -->
+                    <div class="app-card" id="fraction-science">
+                        <h3><i class="fas fa-flask"></i> Science</h3>
+                        <ul>
+                            <li>Expressing chemical ratios</li>
+                            <li>Dilution calculations</li>
+                            <li>Probability and statistics</li>
+                        </ul>
+                        <p>Example: Mixing a 1:4 ratio of chemical solution (1 part chemical to 4 parts solvent)</p>
+                    </div>
+            
+                    <!-- Time Management -->
+                    <div class="app-card" id="fraction-time-management">
+                        <h3><i class="fas fa-clock"></i> Time Management</h3>
+                        <ul>
+                            <li>Scheduling activities</li>
+                            <li>Dividing work hours</li>
+                            <li>Understanding proportions of time used</li>
+                        </ul>
+                        <p>Example: If a task takes ¾ of an hour, you can calculate the time left by subtracting it from 1 hour (1 - ¾ = ¼ hour left)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="fraction-exercises">
+                <h2><i class="fas fa-pencil-alt"></i> Practice Exercises</h2>
+                
+                <div class="exercise-section">
+                    <h3>Basic Fraction Concepts</h3>
+                    <ol>
+                        <li>Identify the numerator and denominator in 5/8</li>
+                        <li>Convert 9/4 to a mixed number</li>
+                        <li>Convert 3⅖ to an improper fraction</li>
+                        <li>Write 1 ¾ as an improper fraction</li>
+                        <li>Write 7/5 as a mixed number</li>
+                        <li>Express 2/3 as a unit fraction</li>
+                        <li>Identify the type of fraction in 4/5</li>
+                        <li>Convert 10/3 into a mixed number</li>
+                    </ol>
+                </div>
+            
+                <div class="exercise-section">
+                    <h3>Fraction Operations</h3>
+                    <ol start="9">
+                        <li>Calculate: 1/3 + 1/6</li>
+                        <li>Calculate: 5/8 - 1/4</li>
+                        <li>Calculate: 2/5 × 3/7</li>
+                        <li>Calculate: 3/4 ÷ 2/3</li>
+                        <li>Calculate: 5/12 + 7/12</li>
+                        <li>Calculate: 8/9 - 4/9</li>
+                        <li>Multiply: 3/4 × 2/5</li>
+                        <li>Divide: 9/10 ÷ 3/5</li>
+                    </ol>
+                </div>
+            
+                <div class="exercise-section">
+                    <h3>Comparisons and Conversions</h3>
+                    <ol start="17">
+                        <li>Which is larger: 3/7 or 4/9?</li>
+                        <li>Convert 5/8 to a decimal</li>
+                        <li>Convert 0.625 to a fraction</li>
+                        <li>Express 7/20 as a percentage</li>
+                        <li>Which is larger: 1/4 or 2/5?</li>
+                    </ol>
+                </div>
+            
+                <div class="exercise-section">
+                    <h3>Word Problems</h3>
+                    <ol start="22">
+                        <li>A recipe calls for ¾ cup sugar. You want to make half the recipe. How much sugar?</li>
+                        <li>You have 5⅓ feet of rope and cut off 2¾ feet. How much remains?</li>
+                        <li>If 3/5 of students are girls and there are 150 students, how many are girls?</li>
+                        <li>You need 1 ¼ yards of fabric. If each piece of fabric is ¾ yard, how many pieces do you need?</li>
+                        <li>A student reads 2/3 of a book in 4 days. How much of the book will the student have read in 12 days?</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section id="fraction-quiz">
+                <h2><i class="fas fa-question-circle"></i> Fractions Quiz</h2>
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <p>1. What is the numerator in 7/8?</p>
+                        <label><input type="radio" name="q1" value="A"> 7</label>
+                        <label><input type="radio" name="q1" value="B"> 8</label>
+                        <label><input type="radio" name="q1" value="C"> 15</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>2. Which is a proper fraction?</p>
+                        <label><input type="radio" name="q2" value="A"> 9/4</label>
+                        <label><input type="radio" name="q2" value="B"> 3/2</label>
+                        <label><input type="radio" name="q2" value="C"> 5/6</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>3. What is 5/2 as a mixed number?</p>
+                        <label><input type="radio" name="q3" value="A"> 2½</label>
+                        <label><input type="radio" name="q3" value="B"> 3½</label>
+                        <label><input type="radio" name="q3" value="C"> 5½</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>4. What is 1/4 + 1/3?</p>
+                        <label><input type="radio" name="q4" value="A"> 2/7</label>
+                        <label><input type="radio" name="q4" value="B"> 7/12</label>
+                        <label><input type="radio" name="q4" value="C"> 1/12</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>5. What is 3/5 × 2/7?</p>
+                        <label><input type="radio" name="q5" value="A"> 5/12</label>
+                        <label><input type="radio" name="q5" value="B"> 6/35</label>
+                        <label><input type="radio" name="q5" value="C"> 5/35</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>6. Which is larger: 2/3 or 3/5?</p>
+                        <label><input type="radio" name="q6" value="A"> 2/3</label>
+                        <label><input type="radio" name="q6" value="B"> 3/5</label>
+                        <label><input type="radio" name="q6" value="C"> They're equal</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>7. What is 3/8 as a decimal?</p>
+                        <label><input type="radio" name="q7" value="A"> 0.375</label>
+                        <label><input type="radio" name="q7" value="B"> 0.38</label>
+                        <label><input type="radio" name="q7" value="C"> 0.83</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>8. If you have 3/4 of a pizza and eat 1/3 of it, how much remains?</p>
+                        <label><input type="radio" name="q8" value="A"> 1/2</label>
+                        <label><input type="radio" name="q8" value="B"> 2/3</label>
+                        <label><input type="radio" name="q8" value="C"> 1/4</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>9. Convert 3/5 to a decimal.</p>
+                        <label><input type="radio" name="q9" value="A"> 0.5</label>
+                        <label><input type="radio" name="q9" value="B"> 0.6</label>
+                        <label><input type="radio" name="q9" value="C"> 0.75</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>10. Convert 0.75 to a fraction.</p>
+                        <label><input type="radio" name="q10" value="A"> 3/4</label>
+                        <label><input type="radio" name="q10" value="B"> 1/2</label>
+                        <label><input type="radio" name="q10" value="C"> 5/8</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>11. What is 7/8 - 1/4?</p>
+                        <label><input type="radio" name="q11" value="A"> 5/8</label>
+                        <label><input type="radio" name="q11" value="B"> 3/8</label>
+                        <label><input type="radio" name="q11" value="C"> 1/4</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>12. If you divide 2/3 by 4/5, what is the result?</p>
+                        <label><input type="radio" name="q12" value="A"> 10/12</label>
+                        <label><input type="radio" name="q12" value="B"> 5/6</label>
+                        <label><input type="radio" name="q12" value="C"> 6/8</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>13. Convert 3/4 to a percentage.</p>
+                        <label><input type="radio" name="q13" value="A"> 50%</label>
+                        <label><input type="radio" name="q13" value="B"> 75%</label>
+                        <label><input type="radio" name="q13" value="C"> 60%</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>14. If 5/6 of the students are boys, and there are 180 students, how many boys are there?</p>
+                        <label><input type="radio" name="q14" value="A"> 150</label>
+                        <label><input type="radio" name="q14" value="B"> 120</label>
+                        <label><input type="radio" name="q14" value="C"> 100</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>15. What is the lowest common denominator of 2/3 and 3/4?</p>
+                        <label><input type="radio" name="q15" value="A"> 12</label>
+                        <label><input type="radio" name="q15" value="B"> 7</label>
+                        <label><input type="radio" name="q15" value="C"> 6</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>16. What is the reciprocal of 5/9?</p>
+                        <label><input type="radio" name="q16" value="A"> 9/5</label>
+                        <label><input type="radio" name="q16" value="B"> 5/9</label>
+                        <label><input type="radio" name="q16" value="C"> 1/5</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>17. Which fraction is equivalent to 2/5?</p>
+                        <label><input type="radio" name="q17" value="A"> 4/10</label>
+                        <label><input type="radio" name="q17" value="B"> 6/10</label>
+                        <label><input type="radio" name="q17" value="C"> 1/5</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>18. What is 2/3 + 4/5?</p>
+                        <label><input type="radio" name="q18" value="A"> 22/15</label>
+                        <label><input type="radio" name="q18" value="B"> 1/3</label>
+                        <label><input type="radio" name="q18" value="C"> 6/8</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>19. What is 3/7 expressed as a decimal?</p>
+                        <label><input type="radio" name="q19" value="A"> 0.428</label>
+                        <label><input type="radio" name="q19" value="B"> 0.33</label>
+                        <label><input type="radio" name="q19" value="C"> 0.45</label>
+                    </div>
+            
+                    <div class="quiz-question">
+                        <p>20. What is the sum of 3/8 + 1/2?</p>
+                        <label><input type="radio" name="q20" value="A"> 7/8</label>
+                        <label><input type="radio" name="q20" value="B"> 5/8</label>
+                        <label><input type="radio" name="q20" value="C"> 1</label>
+                    </div>
+            
+                    <button type="fraction-submit">Submit</button>
+                 </form>
+            
+                <div id="quiz-results"></div>
+            </section>
+            <script>
+                // Answer Key for the Fractions Quiz (20 questions)
+                const fractionsAnswerKey = {
+                    q1: "A", q2: "C", q3: "A", q4: "B", q5: "B",
+                    q6: "A", q7: "A", q8: "A", q9: "B", q10: "A",
+                    q11: "A", q12: "B", q13: "B", q14: "A", q15: "A",
+                    q16: "A", q17: "A", q18: "A", q19: "A", q20: "A"
+                };
+                
+                // Wait for DOM to be fully loaded
+                document.addEventListener('DOMContentLoaded', function() {
+                    const quizForm = document.getElementById('quiz-form');
+                    const resultDiv = document.getElementById('quiz-results');
+                    
+                    // Debugging: Check if elements exist
+                    if (!quizForm) {
+                        console.error('Quiz form not found! Check the ID "quiz-form"');
+                        return;
+                    }
+                    if (!resultDiv) {
+                        console.error('Result div not found! Check the ID "quiz-results"');
+                        return;
+                    }
+                
+                    // Add submit event listener
+                    quizForm.addEventListener('submit', function(event) {
+                        // Prevent default form submission
+                        event.preventDefault();
+                        console.log('Form submission intercepted'); // Debugging
+                        
+                        let score = 0;
+                        const totalQuestions = Object.keys(fractionsAnswerKey).length;
+                        const unanswered = [];
+                        
+                        // Check each answer
+                        for (let i = 1; i <= totalQuestions; i++) {
+                            const questionName = `q${i}`;
+                            const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+                            
+                            if (!selectedAnswer) {
+                                unanswered.push(i);
+                                continue;
+                            }
+                            
+                            if (selectedAnswer.value === fractionsAnswerKey[questionName]) {
+                                score++;
+                            }
+                        }
+                        
+                        // Calculate percentage
+                        const percentage = (score / totalQuestions * 100).toFixed(1);
+                        
+                        // Create feedback message
+                        let feedbackMessage;
+                        if (unanswered.length > 0) {
+                            feedbackMessage = `<p><i class="fas fa-exclamation-circle"></i> You didn't answer questions: ${unanswered.join(', ')}</p>`;
+                        } else if (percentage >= 80) {
+                            feedbackMessage = '<p><i class="fas fa-check-circle"></i> Excellent! You have mastered fractions.</p>';
+                        } else if (percentage >= 50) {
+                            feedbackMessage = '<p><i class="fas fa-thumbs-up"></i> Good job! Review your missed questions.</p>';
+                        } else {
+                            feedbackMessage = '<p><i class="fas fa-book"></i> Keep practicing! Fractions take time to master.</p>';
+                        }
+                        
+                        // Display results
+                        resultDiv.innerHTML = `
+                            <div class="quiz-result-box">
+                                <h3>Your Score: ${score}/${totalQuestions} (${percentage}%)</h3>
+                                <div class="feedback">${feedbackMessage}</div>
+                                <div class="breakdown">
+                                    <p>Topic Performance:</p>
+                                    <ul>
+                                        <li>Numerators & Denominators: ${score >= 5 ? '✓' : '✗'}</li>
+                                        <li>Proper & Improper Fractions: ${score >= 7 ? '✓' : '✗'}</li>
+                                        <li>Adding & Subtracting Fractions: ${score >= 6 ? '✓' : '✗'}</li>
+                                        <li>Multiplying & Dividing Fractions: ${score >= 7 ? '✓' : '✗'}</li>
+                                    </ul>
+                                </div>
+                                <button class="retry-btn">Try Again</button>
+                            </div>
+                        `;
+                        
+                        // Add retry button functionality
+                        resultDiv.querySelector('.retry-btn').addEventListener('click', function() {
+                            quizForm.reset();
+                            resultDiv.innerHTML = '';
+                        });
+                        
+                        // Scroll to results
+                        resultDiv.scrollIntoView({ behavior: 'smooth' });
+                    });
+                });
+            </script>
+
+        <section id="fraction-videos" class="fraction-section">
+    <h2 class="fraction-heading"><i class="fas fa-video"></i> Fraction Video Tutorials</h2>
+    
+    <div class="fraction-encouragement">
+        <p><i class="fas fa-lightbulb"></i> Visual learning helps! These curated videos explain key fraction concepts with clear examples and demonstrations.</p>
+    </div>
+
+    <div class="fraction-video-grid">
+        <div class="fraction-video-card">
+            <div class="fraction-video-container">
+                <iframe src="https://www.youtube.com/watch?v=8Mpc9ukltVA" 
+                       frameborder="0" 
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                       allowfullscreen></iframe>
+            </div>
+            <h3 class="fraction-video-title">Understanding Fractions</h3>
+            <p class="fraction-video-description">Learn the basics of fractions with visual examples.</p>
+            <div class="fraction-video-duration"><i class="fas fa-clock"></i> 10:15</div>
+        </div>
+
+        <div class="fraction-video-card">
+            <div class="fraction-video-container">
+                <iframe src="https://www.youtube.com/watch?v=RiRVzP7YNXI" 
+                       frameborder="0" 
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                       allowfullscreen></iframe>
+            </div>
+            <h3 class="fraction-video-title">Fraction Operations</h3>
+            <p class="fraction-video-description">Step-by-step guide to adding, subtracting, multiplying and dividing fractions.</p>
+            <div class="fraction-video-duration"><i class="fas fa-clock"></i> 12:30</div>
+        </div>
+</section>
+
+<section id="fraction-forum" class="fraction-forum-section">
+    <div class="fraction-forum-header">
+        <h2>Fraction Discussion Forum</h2>
+        <p>Stuck on a fraction problem? Get help from our community!</p>
+    </div>
+        
+    <form id="fraction-forum-form" class="fraction-forum-form">
+        <div class="fraction-form-row">
+            <div class="fraction-form-group">
+                <label for="fraction-userName" class="fraction-form-label">Your Name</label>
+                <input type="text" id="fraction-userName" class="fraction-form-input" required>
+            </div>
+            <div class="fraction-form-group">
+                <label for="fraction-topic" class="fraction-form-label">Topic</label>
+                <select id="fraction-topic" class="fraction-form-select" required>
+                    <option value="" disabled selected>Select topic</option>
+                    <option value="operations">Fraction Operations</option>
+                    <option value="applications">Real-World Applications</option>
+                </select>
+            </div>
+        </div>
+        <div class="fraction-form-group">
+            <label for="fraction-userPost" class="fraction-form-label">Your Question</label>
+            <textarea id="fraction-userPost" class="fraction-form-textarea" required></textarea>
+        </div>
+        <button type="submit" class="fraction-form-submit">Post Question</button>
+    </form>
+    
+    <div class="fraction-forum-posts-container">
+        <h3>Recent Discussions</h3>
+        <div id="fraction-forum-posts">
+            <!-- Dynamic posts will appear here -->
+        </div>
+    </div>
+</section>
+
+<script src="fractionsapp.js"></script>
+<script src="fractionscript.js"></script>
+<script>
+    // Escape HTML to prevent XSS attacks
+    function escapeHTML(str) {
+        return str.replace(/[&<>"']/g, function (match) {
+            const escapeChars = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return escapeChars[match];
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const forumKey = 'word.problem-forumPosts'; // Use a new forum key for the new topic
+
+        // Function to load forum posts
+        function loadForumPosts() {
+            const forumPosts = JSON.parse(localStorage.getItem(forumKey)) || [];
+            const forumPostsDiv = document.getElementById('word.problem-forum-posts');
+            forumPostsDiv.innerHTML = '';
+
+            // Show the latest posts first
+            const reversedPosts = [...forumPosts].reverse();
+
+            reversedPosts.forEach((post, index) => {
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('forum-post');
+
+                // Creating post content
+                postDiv.innerHTML = `
+                    <div class="forum-post-header">
+                        <h4>${escapeHTML(post.userName)}</h4>
+                        <span class="forum-post-time">${new Date(post.timestamp).toLocaleString()}</span>
+                    </div>
+                    <div class="forum-post-content">${escapeHTML(post.userPost)}</div>
+                    ${index === 0 ? '<div class="new-post-indicator">New</div>' : ''}
+                `;
+                
+                forumPostsDiv.appendChild(postDiv);
+            });
+        }
+
+        // Handle post submission
+        document.getElementById('word.problem-forum-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const userNameInput = document.getElementById('word.problem-userName');
+            const userPostInput = document.getElementById('word.problem-userPost');
+
+            const userName = userNameInput.value.trim();
+            const userPost = userPostInput.value.trim();
+
+            // Check if both fields are filled
+            if (!userName || !userPost) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Get existing posts from localStorage
+            const forumPosts = JSON.parse(localStorage.getItem(forumKey)) || [];
+
+            // New post object
+            const newPost = {
+                userName,
+                userPost,
+                timestamp: new Date().toISOString()  // Store timestamp for sorting
+            };
+
+            // Add new post and update localStorage
+            forumPosts.push(newPost);
+            localStorage.setItem(forumKey, JSON.stringify(forumPosts));
+
+            // Clear form fields
+            userNameInput.value = '';
+            userPostInput.value = '';
+
+            // Reload posts
+            loadForumPosts();
+
+            // Smooth scroll to the posts section
+            document.getElementById('word.problem-forum-posts').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Initial load of posts
+        loadForumPosts();
+    });
+</script>
+    </body>
+</html>

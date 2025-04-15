@@ -1,0 +1,182 @@
+TOPICS /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+.topics-header {
+    background-image: url('math.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local; /* Better for foldables */
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+    width: 100vw; /* Uses full viewport width (fixes edge gaps) */
+    min-height: 40vh; /* Better for tall/unfolded screens */
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    left: 50%; /* Helps eliminate side gaps */
+    transform: translateX(-50%); /* Centers properly */
+}
+
+/* Adjust for very wide screens (unfolded Z Fold 5) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .topics-header {
+        min-height: 40vh; /* Prevents excessive height in landscape */
+    }
+}
+
+/* Adjust for very tall screens (folded Z Fold 5) */
+@media (min-height: 1000px) {
+    .topics-header {
+        min-height: 30vh; /* Prevents too much stretching */
+    }
+}
+.topics-header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.topics-header .encouragement-text {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 300;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    width: 100%; /* Ensure no overflow in the main content */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Topics Container */
+.topics-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to two columns */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%; /* Prevent overflow */
+}
+
+/* Ensure padding is applied uniformly */
+.topic-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center cards */
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.topic-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.topic-title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.topic-title a:hover {
+    color: #007bff;
+}
+
+.topic-description {
+    font-size: 1.2em;
+    color: #555;
+}
+/* Mobile Responsive Design */
+@media screen and (max-width: 768px) {
+    .topics-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .topics-header h1 {
+        font-size: 2.5em;
+    }
+
+    .topics-header .encouragement-text {
+        font-size: 1.2em;
+    }
+
+    .topic-card {
+        padding: 15px;
+        margin: 0 auto; /* Ensure card is centered */
+    }
+
+    .topic-title {
+        font-size: 1.5em;
+    }
+
+    .topic-description {
+        font-size: 1em;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1024px) {
+    .topics-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row on desktop */
+    }
+
+    .topics-header h1 {
+        font-size: 4em;
+    }
+
+    .topics-header .encouragement-text {
+        font-size: 1.8em;
+    }
+
+    .topic-card {
+        padding: 25px;
+    }
+
+    .topic-title {
+        font-size: 2em;
+    }
+
+    .topic-description {
+        font-size: 1.4em;
+    }
+}

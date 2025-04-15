@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonts and Base */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 5px solid #2980b9;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    background: #2980b9;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background: #1abc9c;
+  }
+  
+  /* Sections */
+  section {
+    margin: 2rem 0;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  section p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Video Grid */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  .video-grid iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* PDF Grid */
+  .pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .pdf-grid a {
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease, background 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .pdf-grid a:hover {
+    transform: translateY(-5px);
+    background: #e6f2ff;
+  }
+  
+  .pdf-grid img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pdf-grid span {
+    display: block;
+    font-weight: 500;
+  }
+  
+  /* Tools List */
+  .tools {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .tools li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .tools a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .tools a:hover {
+    text-decoration: underline;
+  }
+  
+  /* WhatsApp Button */
+  .whatsapp-link {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .whatsapp-link:hover {
+    background: #1ebc57;
+  }
+  
+  /* Back to Top Button */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: background 0.3s ease;
+  }
+  
+  #backToTop:hover {
+    background: #2980b9;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #1abc9c;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Media Queries */
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    section h2 {
+      font-size: 1.25rem;
+    }
+  
+    .pdf-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .video-grid iframe {
+      height: 160px;
+    }
+  }
+  
