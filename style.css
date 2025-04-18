@@ -79,7 +79,7 @@
   /* Start Button */
   .start-button {
     display: inline-block;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     font-weight: bold;
@@ -140,11 +140,6 @@
     .start-button {
       padding: 0.9rem 1.5rem;
       font-size: 0.95rem;
-      margin-top: 7rem;
-    }
-  
-    #index-footer {
-      font-size: 0.75rem;
-      padding: 8px 0;
+      margin-top: rem;
     }
   }
