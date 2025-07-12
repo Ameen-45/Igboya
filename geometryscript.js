@@ -154,3 +154,51 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial load of forum posts
     loadForumPosts();
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize interactive elements
+    initInteractiveElements();
+});
+
+function initInteractiveElements() {
+    // Add check buttons to exercises
+    const exercises = document.querySelectorAll('.geometry-exercise-section li');
+    
+    exercises.forEach(exercise => {
+        const checkBtn = document.createElement('button');
+        checkBtn.className = 'check-exercise-btn';
+        checkBtn.innerHTML = '<i class="fas fa-check"></i> Check';
+        checkBtn.onclick = function() {
+            showNotification('Exercise checking will be implemented in the full version', 'info');
+        };
+        
+        exercise.appendChild(document.createElement('br'));
+        exercise.appendChild(checkBtn);
+    });
+    
+    // Enhance video players
+    enhanceVideoPlayers();
+}
+
+function enhanceVideoPlayers() {
+    // This would implement additional video player controls
+    // Currently just a placeholder
+    console.log('Video player enhancements would go here');
+}
+
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
+}

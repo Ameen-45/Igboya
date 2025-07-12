@@ -6,82 +6,121 @@
     <title>Math Topics - IGBOYA</title>
     <link rel="stylesheet" href="topicsstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="math-symbol">+</div>
+                <div class="math-symbol">×</div>
+                <div class="math-symbol">÷</div>
+                <div class="math-symbol">=</div>
+            </div>
+            <p>Loading Topics...</p>
+        </div>
+    </div>
+
     <header class="topics-header">
-        <h1>Topic To Learn</h1>
-        <p class="encouragement-text">Embark on your mathematical journey and unlock the secrets of numbers. Every topic is a new opportunity to grow!</p>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Topics To Learn</h1>
+            <p class="encouragement-text">Embark on your mathematical journey and unlock the secrets of numbers. Every topic is a new opportunity to grow!</p>
+            <div class="math-icon-grid">
+                <span>∑</span>
+                <span>π</span>
+                <span>∫</span>
+                <span>∞</span>
+                <span>√</span>
+                <span>θ</span>
+            </div>
+        </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main-content">
         <section class="topics-section">
-            <h2 class="section-title">Choose a Topic</h2>
+            <div class="section-header">
+                <h2 class="section-title">Choose a Topic</h2>
+                <div class="section-divider"></div>
+            </div>
             
             <div class="topics-container">
                 <!-- Topic Card 1 -->
-                <div class="topic-card">
+                <div class="topic-card" data-topic="matrices">
+                    <div class="card-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
                     <h3 class="topic-title"><a href="matrices.html">Matrices</a></h3>
-                    <p class="topic-description">Learn about matrix operations and applications</p>
+                    <p class="topic-description">Master matrix operations and their real-world applications</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
                 </div>
                 
                 <!-- Topic Card 2 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="trigonometry.html">Trigonometry</a></h3>
-                    <p class="topic-description">Master trigonometric functions and identities</p>
+                <div class="topic-card" data-topic="geometry">
+                    <div class="card-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h3 class="topic-title"><a href="geometry.html">Geometry</a></h3>
+                    <p class="topic-description">Explore shapes, angles, and spatial relationships</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
                 </div>
                 
                 <!-- Topic Card 3 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="geometry.html">Geometry</a></h3>
-                    <p class="topic-description">Understand shapes, angles, and spatial relationships</p>
+                <div class="topic-card" data-topic="fractions">
+                    <div class="card-icon">
+                        <i class="fas fa-divide"></i>
+                    </div>
+                    <h3 class="topic-title"><a href="fractions.html">Fractions</a></h3>
+                    <p class="topic-description">Work with different types of fractions and operations</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
                 </div>
                 
                 <!-- Topic Card 4 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="fractions.html">Fractions</a></h3>
-                    <p class="topic-description">Work with different types of fractions</p>
-                </div>
-                
-                <!-- Topic Card 5 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="statistics.html">Statistics</a></h3>
-                    <p class="topic-description">Learn data analysis and probability</p>
-                </div>
-                
-                <!-- Topic Card 6 -->
-                <div class="topic-card">
+                <div class="topic-card" data-topic="algebra">
+                    <div class="card-icon">
+                        <i class="fas fa-superscript"></i>
+                    </div>
                     <h3 class="topic-title"><a href="algebra.html">Algebra</a></h3>
-                    <p class="topic-description">Solve equations and understand functions</p>
-                </div>
-                
-                <!-- Topic Card 7 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="word.problem.html">Word Problems</a></h3>
-                    <p class="topic-description">Apply math to real-world situations</p>
-                </div>
-                
-                <!-- Topic Card 8 -->
-                <div class="topic-card">
-                    <h3 class="topic-title"><a href="calculus.html">Calculus</a></h3>
-                    <p class="topic-description">Study rates of change and accumulation</p>
+                    <p class="topic-description">Solve equations and understand functional relationships</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%"></div>
+                    </div>
                 </div>
 
-                <!-- Topic Card 9 -->
-                <div class="topic-card">
+                <!-- Topic Card 5 -->
+                <div class="topic-card" data-topic="resources">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
                     <h3 class="topic-title"><a href="resources.html">Educational Resources</a></h3>
-                    <p class="topic-description">Explore study materials, guides, and videos</p>
+                    <p class="topic-description">Explore study materials, guides, and video tutorials</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
                 </div>
                 
-                <!-- Topic Card 10 -->
-                <div class="topic-card">
+                <!-- Help Card -->
+                <div class="topic-card highlight-card" data-topic="help">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
                     <a href="https://wa.me/yourwhatsapplink?text=Need%20Help%3F" target="_blank" class="topic-link">
                         <h3 class="topic-title">Need Help?</h3>
-                        <p class="topic-description">Join our WhatsApp group for assistance!</p>
+                        <p class="topic-description">Join our WhatsApp group for personalized assistance!</p>
                     </a>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
                 </div>
+            </div>
         </section>
     </main>
+
+    <script src="topicsscript.js"></script>
 </body>
 </html>

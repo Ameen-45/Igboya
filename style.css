@@ -1,145 +1,268 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Latin Modern Math', serif;
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-content {
+  text-align: center;
+  color: white;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.math-symbol {
+  font-size: 2.5rem;
+  margin: 0 10px;
+  animation: float 2s infinite ease-in-out;
+  opacity: 0;
+}
+
+.math-symbol:nth-child(1) { animation-delay: 0.1s; }
+.math-symbol:nth-child(2) { animation-delay: 0.3s; }
+.math-symbol:nth-child(3) { animation-delay: 0.5s; }
+.math-symbol:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(-15px); opacity: 1; }
+}
+
+/* Math Background */
+.math-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 123, 255, 0.05) 0%, transparent 20%),
+    linear-gradient(to right, transparent, rgba(255,255,255,0.02), transparent);
+  z-index: -1;
+}
+
+.math-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(0deg, transparent 0px, transparent 1px, rgba(255,255,255,0.03) 1px, rgba(255,255,255,0.03) 2px),
+    repeating-linear-gradient(90deg, transparent 0px, transparent 1px, rgba(255,255,255,0.03) 1px, rgba(255,255,255,0.03) 2px);
+  background-size: 40px 40px;
+}
+
+/* HEADER Styling */
+.index-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Overlay */
+.index-header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Welcome Section */
+.index-header #welcome {
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.index-header #welcome h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  line-height: 1.2;
+}
+
+.index-header #welcome strong {
+  color: #FFD700;
+  position: relative;
+  display: inline-block;
+}
+
+.index-header #welcome strong::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #FFD700;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.index-header #welcome:hover strong::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.index-header #welcome p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* First Message Section */
+.index-header .firstmessage {
+  margin-top: 2rem;
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.index-header .firstmessage h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Start Button */
+.start-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  animation: colorShift 3s infinite alternate, pulse 2s infinite ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.start-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.start-button:hover::before {
+  left: 100%;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes colorShift {
+  0% {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
   }
-  /* HEADER Styling */
-  .index-header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  100% {
+    background: linear-gradient(45deg, #00d4ff, #007bff);
   }
-  
-  /* Background Image */
-  .image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('pics.jpeg') no-repeat center center/cover;
-    z-index: -1;
-  }
-  
-  /* Overlay */
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .index-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    flex-direction: column;
+    padding: 2rem;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    z-index: 1;
-    overflow: hidden;
   }
-  
-  /* Welcome Section */
-  .index-header #welcome {
-    margin-bottom: 1rem;
-  }
-  
+
   .index-header #welcome h1 {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
   }
+
+  .index-header #welcome p {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .index-header .firstmessage h2 {
+    font-size: 1.5rem;
+  }
+
+  .start-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
   
-  .index-header #welcome strong {
-    color: #FFD700; /* Yellow highlight */
+  .math-symbol {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-header #welcome h1 {
+    font-size: 1.8rem;
   }
   
   .index-header #welcome p {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 0.9rem;
   }
-  
-  /* First Message Section */
-  .index-header .firstmessage {
-    margin-top: 1.5rem;
-  }
-  
-  .index-header .firstmessage h2 {
-    font-size: 2rem;
-  }
-  
-  /* Start Button */
-  .start-button {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(45deg, #007bff, #00d4ff);
-    animation: colorShift 3s infinite alternate;
-    transition: all 0.3s ease-in-out;
-    z-index: 10;
-    cursor: pointer;
-    font-family: cursive;
-  }
-  
-  .start-button:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Button Animation */
-  @keyframes colorShift {
-    0% {
-      background: linear-gradient(45deg, #007bff, #00d4ff);
-    }
-    100% {
-      background: linear-gradient(45deg, #00d4ff, #007bff);
-    }
-  }
-  
-  
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .index-header .overlay {
-      justify-content: flex-start;
-      padding-top: 10vh;
-      padding-bottom: 6vh;
-    }
-  
-    .index-header #welcome h1 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-  
-    .index-header #welcome p {
-      font-size: 1.2rem;
-      padding: 0.8rem 1.2rem;
-      margin-top: 0.5rem;
-    }
-  
-    .index-header .firstmessage {
-      margin-top: 7rem;
-    }
-  
-    .index-header .firstmessage h2 {
-      font-size: 2rem;
-    }
-  
-    .start-button {
-      padding: 0.9rem 1.5rem;
-      font-size: 0.95rem;
-      margin-top: rem;
-    }
-  }
+}
