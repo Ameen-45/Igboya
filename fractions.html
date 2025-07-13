@@ -738,9 +738,9 @@
 <section id="fraction-forum" class="fraction-forum-section">
     <div class="fraction-forum-header">
         <h2>Fraction Discussion Forum</h2>
-        <p>Stuck on a fraction problem? Get help from our community!</p>
+        <p>Stuck on a fraction problem? Fill the form, copy your question, and join our WhatsApp group to post it!</p>
     </div>
-        
+
     <form id="fraction-forum-form" class="fraction-forum-form">
         <div class="fraction-form-row">
             <div class="fraction-form-group">
@@ -751,8 +751,8 @@
                 <label for="fraction-topic" class="fraction-form-label">Topic</label>
                 <select id="fraction-topic" class="fraction-form-select" required>
                     <option value="" disabled selected>Select topic</option>
-                    <option value="operations">Fraction Operations</option>
-                    <option value="applications">Real-World Applications</option>
+                    <option value="Fraction Operations">Fraction Operations</option>
+                    <option value="Real-World Applications">Real-World Applications</option>
                 </select>
             </div>
         </div>
@@ -760,8 +760,31 @@
             <label for="fraction-userPost" class="fraction-form-label">Your Question</label>
             <textarea id="fraction-userPost" class="fraction-form-textarea" required></textarea>
         </div>
-        <button type="submit" class="fraction-form-submit">Post Question</button>
+        <button type="button" class="fraction-form-submit" onclick="copyAndRedirect()">Copy & Join Group</button>
     </form>
+</section>
+
+<script>
+function copyAndRedirect() {
+    const name = document.getElementById('fraction-userName').value.trim();
+    const topic = document.getElementById('fraction-topic').value;
+    const question = document.getElementById('fraction-userPost').value.trim();
+
+    if (!name || !topic || !question) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    const message = `👤 Name: ${name}\n📚 Topic: ${topic}\n❓ Question:\n${question}`;
+    navigator.clipboard.writeText(message).then(() => {
+        alert("✅ Your question has been copied! Now paste it in the WhatsApp group.");
+        window.open("https://chat.whatsapp.com/LPoXBwl6Y9ZDkyYPcHvKbx?mode=ac_c", "_blank");
+    }).catch(err => {
+        alert("Failed to copy text: " + err);
+    });
+}
+</script>
+
     
     <div class="fraction-forum-posts-container">
         <h3>Recent Discussions</h3>
